@@ -1,8 +1,6 @@
 import Movie from "../movie";
 import Image from "next/image";
 
-
-
 export default async function MovieDetail({ params }) {
   const { movie } = params;
   const imagePath = "https://image.tmdb.org/t/p/original";

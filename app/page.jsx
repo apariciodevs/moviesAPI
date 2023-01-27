@@ -1,10 +1,11 @@
 import Movie from "./movie";
 
-export default async function Home() {
+export default async function Home(movie) {
   const data = await fetch(
     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}` 
   );
   const res = await data.json();
+  console.log(res)
 
   return (
     <main>
